@@ -1,0 +1,16 @@
+ContentObjectID;NodeID;SectionID;"Section Name";Visibility;"Modified Date";"Node Name";"Node Url"
+5045;5041;8;Administration;Visible;"08/22/2014 12:30:59";Administration;http://admin.example.com/Divisions-Offices/Administration
+5107;5103;8;Administration;Visible;"07/29/2014 09:57:34";"Finance and Accounting";http://admin.example.com/Divisions-Offices/Administration/Bureaus-and-Sections/Finance-and-Accounting
+5109;5105;8;Administration;Visible;"07/29/2014 07:53:55";"General Services";http://admin.example.com/Divisions-Offices/Administration/Bureaus-and-Sections/General-Services
+5110;5106;8;Administration;Visible;"07/29/2014 07:53:53";"Personnel Management";http://admin.example.com/Divisions-Offices/Administration/Bureaus-and-Sections/Personnel-Management
+27533;28352;8;Administration;Visible;"08/20/2013 08:26:15";Bureaus_Sections;http://admin.example.com/Divisions-Offices/Administration/Bureaus_Sections
+27534;28353;8;Administration;Visible;"12/02/2014 08:48:21";"Laws and Regulations";http://admin.example.com/Divisions-Offices/Administration/Laws-and-Regulations
+31177;33484;8;Administration;Visible;"12/18/2013 19:21:42";"Bureaus and Sections";http://admin.example.com/Divisions-Offices/Administration/Bureaus-and-Sections
+34729;38931;8;Administration;Hidden;"01/31/2014 11:49:06";"Admin Folder";http://admin.example.com/Test-Area/Administration/Admin-Folder
+34730;38932;8;Administration;"Hidden By Parent";"01/31/2014 11:58:58";"Test Folder";http://admin.example.com/Test-Area/Administration/Admin-Folder/Test-Folder
+34746;38948;8;Administration;"Hidden By Parent";"02/04/2014 10:53:44";"Test Folder";http://admin.example.com/Test-Area/Administration/Admin-Folder/Test-Folder2
+37795;43196;8;Administration;"Hidden By Parent";"07/09/2014 14:22:42";"Testing Collab Emails";http://admin.example.com/Test-Area/Administration/Admin-Folder/Test-Folder2/Testing-Collab-Emails
+37796;43197;8;Administration;"Hidden By Parent";"07/09/2014 14:29:22";"Test Folder";http://admin.example.com/Test-Area/Administration/Admin-Folder/Test-Folder2/Testing-Collab-Emails/Test-Folder
+42268;48255;8;Administration;Visible;"01/23/2015 22:10:42";"Crazy Event Test 001";http://admin.example.com/Divisions-Offices/Administration/Crazy-Event-Test-001
+42270;48257;8;Administration;Visible;"01/24/2015 19:08:34";"Crazy Article Test 001";http://admin.example.com/Divisions-Offices/Administration/Crazy-Article-Test-001
+42271;48258;8;Administration;Visible;"01/24/2015 20:22:06";"Crazy Article Test 002";http://admin.example.com/Divisions-Offices/Administration/Crazy-Article-Test-002

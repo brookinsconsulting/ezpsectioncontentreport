@@ -1,0 +1,5 @@
+eZp Section Content Report FAQ
+
+- Report contents is hard coded. This is a known limitation
+
+- All major functionality currently exists only in report export module view
