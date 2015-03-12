@@ -41,6 +41,50 @@
 <div class="float-break"></div>
 </div>
 
+<span class="sectionContentReportDownloadInstructionsBrief">
+<style>
+{literal}
+.sectionContentReportDownloadOfficeUsageInstructions
+{
+    display:none;
+    margin-bottom:20px;
+}
+{/literal}
+</style>
+<script type="text/javascript">
+{literal}
+$(document).ready(function() {
+    $('.showSectionContentReportDownloadOfficeUsageInstructions').click(function() {
+            $('.sectionContentReportDownloadOfficeUsageInstructions').slideToggle("fast");
+    });
+});
+{/literal}
+</script>
+
+<p>For step by step instructions on how to import the exported section content report csv file(s) into Microsoft Office Excel. Click to <a class="showSectionContentReportDownloadOfficeUsageInstructions" href="javascript:void(0)">Show / Hide</a> instructions.
+
+<div class="sectionContentReportDownloadOfficeUsageInstructions">
+
+<p>Step 1: Save the Section report to your computer.</p>
+
+<p>Step 2: Launch Excel, open a blank workbook, click the Data menu, and select From Text (3rd button from the left).</p>
+
+<p>Step 3: In the Import Text File window, find and select the CSV file and click the Import button. This should display the Import Wizard.</p>
+
+<p>Step 4: The columns in the CSV file have been separated using semicolons. Select the Delimited option for "Choose the file type that best describes your data." </p>
+
+<p>Step 5: Click the Next button.</p>
+
+<p>Step 6: In Step 2 of Import Wizard, choose appropriate delimiter (semicolon) under Delimiters section. You can preview the selection using Data preview section.</p>
+
+<p>Step 7: Click the Finish button in the Import Wizard.</p>
+
+<p>Step 8: In the Import Data dialog box, select Existing worksheet and click OK.</p>
+
+</div>
+
+</span>
+
 {* Section table. *}
 <table class="list" cellspacing="0">
 <tr>
