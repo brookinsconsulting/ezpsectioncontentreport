@@ -36,11 +36,22 @@ $iniSectioncontentreport = eZINI::instance( 'ezpsectioncontentreport.ini' );
 
 // Report file variables
 $storageDirectory = eZSys::cacheDirectory();
-$sectionContentCsvReportFileName = 'ezpsectioncontentreport_section_id_';
+$sectionContentCsvReportName = 'ezpsectioncontentreport';
+$sectionContentCsvReportFileName = $sectionContentCsvReportName . '_section_id_';
 
 /** Default variables **/
 $siteNodeUrlPrefix = "http://";
-$siteNodeUrlHostname = $ini->variable('SiteSettings','SiteURL');
+$siteNodeUrlHostname = $ini->variable( 'SiteSettings', 'SiteURL' );
+
+// Set fetch parameter ignoreVisibility to false to not fetch hidden nodes
+$ignoreVisibility = $iniSectioncontentreport->variable( 'eZPSectionContentReportSettings', 'ExcludeHiddenNodes' ) == 'enabled' ? false : true;
+
+if( !$ignoreVisiblity )
+{
+    // Force ini values to hide hidden nodes on the fly for this request
+    $ini->setVariable( 'SiteAccessSettings', 'ShowHiddenNodes', 'false' );
+}
+
 $rootNodeID = 2;
 $limit = 10000000;
 $offset = 0;
@@ -61,7 +72,7 @@ if ( $sectionID > 0 )
                             'SortBy' => array( 'id' => 'desc' ),
                             'Depth' => 10,
                             'MainNodeOnly' => true,
-                            'IgnoreVisibility' => true );
+                            'IgnoreVisibility' => $ignoreVisibility );
 
     /** Fetch nodes stored in the given section **/
     $nodes = eZContentObjectTreeNode::subTreeByNodeID( $subTreeParams, $rootNodeID );
