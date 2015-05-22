@@ -56,7 +56,7 @@ $rootNodeID = 2;
 $limit = 10000000;
 $offset = 0;
 $openedFPs = array();
-$csvHeader = array( 'ContentObjectID', 'NodeID', 'SectionID', 'Section Name', 'Visibility', 'Modified Date', 'Node Name', 'Node Url' );
+$csvHeader = array( 'ContentObjectID', 'NodeID', 'ContentType', 'SectionID', 'Section Name', 'Visibility', 'Modified Date', 'Node Name', 'Node Url' );
 
 /**
  * Handle section export action
@@ -125,6 +125,7 @@ if ( $sectionID > 0 )
         if ( is_object( $objectMainNode ) )
         {
             $objectMainNodeID = $objectMainNode->attribute( 'node_id' );
+            $objectClassName = $objectMainNode->attribute( 'class_name' );
             $objectMainNodePath = $siteNodeUrlPrefix . $siteNodeUrlHostname . '/' . $objectMainNode->attribute( 'url' );
             $objectMainNodeVisibility = $objectMainNode->attribute( 'is_hidden' );
             $objectMainNodeParentVisibility = $objectMainNode->attribute( 'is_invisible' );
@@ -134,6 +135,8 @@ if ( $sectionID > 0 )
             $objectData[] = $contentObjectID;
 
             $objectData[] = $objectMainNodeID;
+
+            $objectData[] = $objectClassName;
 
             $objectData[] = $objectSectionID;
 
